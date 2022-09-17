@@ -66,7 +66,7 @@ button_0 = Button(root, text=0, height=2,width=7, bg='#cfe7f4',activebackground=
 button_dot = Button(root, text='.', height=2,width=7, bg='#cfe7f4',activebackground='#b9dff4', fg='#416276', activeforeground='#295299', borderwidth=0, font=('UbuntuMono Nerd Font', 12, 'bold'), command=lambda: any_click('.')).grid(row=4, column=2)
 button_divide = Button(root, text='/', height=2,width=7, borderwidth=0, bg='#f4f4b6',activebackground='#f3f49a', fg='#76763e', activeforeground='#76763e',  command=lambda: any_click('/')).grid(row=4, column=3)
 
-button_equals = Button(root, text='=', height=2,width=14, borderwidth=0, bg='#9bf4ad',activebackground='#74f48d', fg='#459153', activeforeground='#459153',  command=equals).grid(row=5, column=0, columnspan=2)
+button_equals = Button(root, text='=', height=2,width=14, borderwidth=0, bg='#9bf4ad',activebackground='#74f48d', fg='#459153', activeforeground='#459153',  command=lambda: equals('<Return>')).grid(row=5, column=0, columnspan=2)
 button_clear = Button(root, text='Clear All', height=2,width=14, borderwidth=0, bg='#f4a0a1',activebackground='#f48183', fg='#914647', activeforeground='#914647',  command=clear_all).grid(row=5, column=2, columnspan=2)
 
 field.focus_set()
